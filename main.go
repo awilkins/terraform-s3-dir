@@ -127,7 +127,6 @@ func main() {
 			"key":          relPath,
 			"source":       modulePath,
 			"etag":         fmt.Sprintf("${md5(file(%q))}", modulePath),
-			"acl": "public-read",
 			"content_type": contentType,
 			"lifecycle": map[string][1]string{
 				"ignore_changes": {"source"},
